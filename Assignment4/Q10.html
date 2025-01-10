@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Form Template</title>
+</head>
+<body>
+    <h1>Customizable Form Template</h1>
+    <form action="/generate-form" method="post">
+        <label for="form-name">Form Name:</label><br>
+        <input type="text" id="form-name" name="form-name" required><br><br>
+        <label for="num-fields">Number of Input Fields:</label><br>
+        <input type="number" id="num-fields" name="num-fields" min="1" required><br><br>
+        <label for="field-types">Select Field Type:</label><br>
+        <select id="field-types" name="field-types" required>
+            <option value="Text">Text</option>
+            <option value="Email">Email</option>
+            <option value="Number">Number</option>
+            <option value="Date">Date</option>
+        </select><br><br>
+        <label for="field-labels">Field Labels (comma-separated):</label><br>
+        <input type="text" id="field-labels" name="field-labels" placeholder="e.g., Name, Email, Age"><br><br>
+        <label for="reorder-fields">Reorder Fields:</label><br>
+        <select id="reorder-fields" name="reorder-fields" multiple>
+            <option value="Field 1">Field 1</option>
+            <option value="Field 2">Field 2</option>
+            <option value="Field 3">Field 3</option>
+            <option value="Field 4">Field 4</option>
+        </select><br><br>
+        <button type="submit">Generate Form</button>
+    </form>
+</body>
+</html>
