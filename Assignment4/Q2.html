@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+<h1>Register yourself !</h1>
+<form action="/login" method="post">
+    <label for="full name">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@domain.com"
+    required><br><br>
+    <label for="phone">Phone number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+    <br>
+    <label for="age_group">Age Group:</label>
+    <select id="age_group" name="age group">
+        <option value="1-10">1-10</option>
+        <option value="10-18">10-18</option>
+        <option value="18-30">18-30</option>
+        <option value="20-45">20-45</option>
+        <option value="45-60">45-60</option>
+        <option value="60+">60+</option>
+    </select>
+    <br><br>
+    <p>Topics of Interest:</p>
+    <input type="checkbox" id="interest1" name="interest1" value="Art">
+    <label for="interest1">Art</label><br>
+    <input type="checkbox" id="interest2" name="interest2" value="Programming">
+    <label for="interest2">Programming</label><br>
+    <input type="checkbox" id="interest3" name="interest3" value="Music">
+    <label for="interest3">Music</label><br>
+    <input type="checkbox" id="interest4" name="interest4" value="Anime">
+    <label for="interest4">Anime</label><br>
+    <br>
+    <label for="additional_comment">Any additional comments?</label><br>
+    <textarea id="additional_comment" name="additional_comment" rows="4" cols="50"></textarea><br><br><br>
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>
